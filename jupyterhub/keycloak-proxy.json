@@ -10,7 +10,7 @@
             "adapter-config": {
                 "realm": "${env.KEYCLOAK_REALM}",
                 "auth-server-url": "${env.SERVER_URL}",
-                "public-client": true,
+                "public-client": false,
                 "resource": "${env.OAUTH_CLIENT_ID}",
                 "ssl-required": "external",
                 "credentials": {
