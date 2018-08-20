@@ -26,6 +26,10 @@
         }
     ],
     "header-names": {
-        "keycloak-subject": "X-Forwarded-User"
+        "keycloak-subject": "X-Keycloak-Subject",
+        "keycloak-username": "X-Keycloak-Username",
+        "keycloak-email": "X-Keycloak-Email",
+        "keycloak-name": "X-Keycloak-Name",
+        "keycloak-access-token": "X-Keycloak-Access-Token"
     }
 }

@@ -30,7 +30,7 @@ if os.path.exists('/opt/app-root/configs/user_whitelist.txt'):
 # are too large when passing of access token is enabled.
 
 c.JupyterHub.authenticator_class = 'jhub_remote_user_authenticator.remote_user_auth.RemoteUserAuthenticator'
-c.RemoteUserAuthenticator.header_name = 'X-Forwarded-User'
+c.RemoteUserAuthenticator.header_name = 'X-Keycloak-Username'
 
 # Configure KeyCloak as authentication provider.
 
