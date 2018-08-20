@@ -1234,6 +1234,9 @@
                         "containers": [
                             {
                                 "name": "proxy",
+                                "command": [
+                                    "/opt/jboss/conf/start-keycloak-proxy.sh"
+                                ],
                                 "env": [
                                     {
                                         "name": "OAUTH_CLIENT_ID",
