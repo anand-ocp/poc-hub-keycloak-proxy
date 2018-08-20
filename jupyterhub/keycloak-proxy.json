@@ -6,6 +6,7 @@
     "applications": [
         {
             "base-path": "/",
+            "proxy-address-forwarding" : true,
             "adapter-config": {
                 "realm": "${env.KEYCLOAK_REALM}",
                 "auth-server-url": "${env.SERVER_URL}",
@@ -19,11 +20,12 @@
             "constraints": [
                 {
                     "pattern": "/*",
-                    "roles-allowed": [
-                        "user"
-                    ]
+                    "authenticate": true
                 }
             ]
         }
-    ]
+    ],
+    "header-names": {
+        "keycloak-subject": "X-Forwarded-User"
+    }
 }
