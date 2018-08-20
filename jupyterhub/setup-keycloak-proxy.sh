@@ -9,7 +9,7 @@ TARGET=${1:-/opt/jboss/conf}
 mkdir -p $TARGET
 
 cp $SOURCE/start-keycloak-proxy.sh $TARGET
-cp $SOURCE/keycloak-proxy.conf $TARGET/proxy.json
+cp $SOURCE/keycloak-proxy.json $TARGET/proxy.json
 
 SERVER="https://$KUBERNETES_SERVICE_HOST:$KUBERNETES_SERVICE_PORT"
 TOKEN=`cat /var/run/secrets/kubernetes.io/serviceaccount/token`

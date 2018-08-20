@@ -248,7 +248,7 @@
                 "source": {
                     "type": "Git",
                     "git": {
-                        "uri": "https://github.com/jupyter-on-openshift/poc-hub-oauth-proxy.git"
+                        "uri": "https://github.com/jupyter-on-openshift/poc-hub-keycloak-proxy.git"
                     },
                     "contextDir": "jupyterhub"
                 },
