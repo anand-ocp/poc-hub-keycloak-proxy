@@ -3,6 +3,8 @@ JupyterHub (Keycloak Proxy)
 
 This repository contains a sample application for deploying JupyterHub as a means to provide Jupyter notebooks to multiple users. Authentication of users is managed using the Keycloak auth proxy.
 
+**Note: This sample application can only be deployed where secure routes in an OpenShift cluster with generated host names have signed certificates. You cannot use Minishift or ``oc cluster up``, which use self signed certificates.**
+
 Deploying the application
 -------------------------
 
