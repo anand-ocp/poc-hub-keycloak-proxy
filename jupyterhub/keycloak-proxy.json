@@ -1,0 +1,29 @@
+{
+    "target-url": "${env.UPSTREAM_URL}",
+    "send-access-token": true,
+    "bind-address": "0.0.0.0",
+    "http-port": "8080",
+    "applications": [
+        {
+            "base-path": "/",
+            "adapter-config": {
+                "realm": "${env.KEYCLOAK_REALM}",
+                "auth-server-url": "${env.SERVER_URL}",
+                "public-client": true,
+                "resource": "${env.OAUTH_CLIENT_ID}",
+                "ssl-required": "external",
+                "credentials": {
+                    "secret": "${env.OAUTH_CLIENT_SECRET}"
+                }
+            },
+            "constraints": [
+                {
+                    "pattern": "/*",
+                    "roles-allowed": [
+                        "user"
+                    ]
+                }
+            ]
+        }
+    ]
+}
