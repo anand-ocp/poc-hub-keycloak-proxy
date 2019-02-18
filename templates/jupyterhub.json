@@ -27,7 +27,7 @@
         },
         {
             "name": "NOTEBOOK_REPOSITORY_URL",
-            "value": "https://github.com/jakevdp/PythonDataScienceHandbook",
+            "value": "https://github.com/anand-ocp/PythonDataScienceHandbook",
             "required": true
         },
         {
@@ -191,7 +191,7 @@
                 "source": {
                     "type": "Git",
                     "git": {
-                        "uri": "https://github.com/jupyter-on-openshift/jupyterhub-quickstart.git"
+                        "uri": "https://github.com/anand-ocp/jupyterhub-quickstart.git"
                     }
                 },
                 "strategy": {
@@ -248,7 +248,7 @@
                 "source": {
                     "type": "Git",
                     "git": {
-                        "uri": "https://github.com/jupyter-on-openshift/poc-hub-keycloak-proxy.git"
+                        "uri": "https://github.com/anand-ocp/poc-hub-keycloak-proxy.git"
                     },
                     "contextDir": "jupyterhub"
                 },
@@ -657,7 +657,7 @@
                 "source": {
                     "type": "Git",
                     "git": {
-                        "uri": "https://github.com/jupyter-on-openshift/jupyter-notebooks.git",
+                        "uri": "https://github.com/anand-ocp/jupyter-notebooks.git",
                         "ref": "1.0.0"
                     },
                     "contextDir": "minimal-notebook"
